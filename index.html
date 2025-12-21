@@ -735,6 +735,8 @@
             cursor: pointer;
             opacity: 0;
             transform: translateY(30px);
+            display: flex;
+            flex-direction: column;
         }
 
         .project-card.show {
@@ -806,6 +808,9 @@
 
         .project-info {
             padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
         }
 
         .project-title {
@@ -823,6 +828,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
+            margin-top: auto;
         }
 
         .tech-tag {
@@ -1529,6 +1535,33 @@
                 <!-- <button class="filter-btn" data-filter="design">Design</button> -->
             </div>
             <div class="projects-grid">
+
+                <div class="project-card show" data-category="web">
+                    <div class="project-image">
+                        <img src="assets/img/gmedco-miniature.png" alt="Alraya Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https:/gmedco-rebuild.vercel.app" target="_blank" class="project-link"><i class="fas fa-eye"></i></a>
+                                <!-- <a href="#" class="project-link"><i class="fab fa-github"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Global Medical Company Website</h3>
+                        <p class="project-description">
+                            A complete rebuild of the Global Medical corporate website using Next.js and Tailwind CSS, delivering a fast, scalable, and SEO-friendly medical platform. The project focuses on a clean clinical UI, modular components, and optimized performance, with clear product sections, structured content, and strong calls-to-action. The design emphasizes trust, precision, and professionalism, reflecting Global Medical’s role in the healthcare sector while ensuring a fully responsive experience across all devices.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">jQuery</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="project-card show" data-category="web">
                     <div class="project-image">
                         <img src="assets/img/alraya-miniature.png" alt="Alraya Website">
